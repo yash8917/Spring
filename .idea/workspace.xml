@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31239233-b68f-41b6-b9a9-1b7288b8f9fc" name="Changes" comment="Do some Smart using Sim Interface" />
+    <list default="true" id="31239233-b68f-41b6-b9a9-1b7288b8f9fc" name="Changes" comment="Do some using Sim Interface , and add the Pictures folder.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/spring/ioc/Mobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/spring/ioc/Mobile.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,20 +33,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Mobile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.ioc.Mobile" />
@@ -73,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705078746119</updated>
       <workItem from="1705078748262" duration="2250000" />
+      <workItem from="1705128994440" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="Update message">
       <option name="closed" value="true" />
@@ -106,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705080912611</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Do some using Sim Interface , and add the Pictures folder.">
+      <option name="closed" value="true" />
+      <created>1705129405620</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705129405620</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update message" />
     <MESSAGE value="Do some Smart using Sim Interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Do some Smart using Sim Interface" />
+    <MESSAGE value="Do some using Sim Interface , and add the Pictures folder." />
+    <option name="LAST_COMMIT_MESSAGE" value="Do some using Sim Interface , and add the Pictures folder." />
   </component>
 </project>
