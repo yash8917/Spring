@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31239233-b68f-41b6-b9a9-1b7288b8f9fc" name="Changes" comment="Do some using Sim Interface , and add the Pictures folder.">
+    <list default="true" id="31239233-b68f-41b6-b9a9-1b7288b8f9fc" name="Changes" comment="Final Update of IOC Container">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_beans_6_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_context_6_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_core_6_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-context-6.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/spring/ioc/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/spring/ioc/pictures/IOC Container/S2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/spring/ioc/pictures/IOC Container/S3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/spring/ioc/pictures/IOC Container/S4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/spring/ioc/Mobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/spring/ioc/Mobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/spring/ioc/pictures/Screenshot 2024-01-13 122807.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/spring/ioc/pictures/IOC Container/S1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +36,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/spring-context-6.1.2.jar!/META-INF/notice.txt" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/spring-context-6.1.2.jar!/META-INF/spring.schemas" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="2arZdGjqLEPc2sm4iAonGW7GYNs" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -37,17 +53,29 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;Y:/commons-logging-1.2.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;206a8000b75da67353802d2089c8dd30&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Y:\Spring\resources" />
+      <recent name="Y:\Spring\src\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Mobile">
     <configuration name="Mobile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.ioc.Mobile" />
       <module name="Spring" />
@@ -61,9 +89,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="spring-context-6.1.2.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/spring-context-6.1.2.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Mobile" />
+        <item itemvalue="JAR Application.spring-context-6.1.2.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -76,7 +109,10 @@
       <option name="presentableId" value="Default" />
       <updated>1705078746119</updated>
       <workItem from="1705078748262" duration="2250000" />
-      <workItem from="1705128994440" duration="413000" />
+      <workItem from="1705128994440" duration="6740000" />
+      <workItem from="1705146681382" duration="1450000" />
+      <workItem from="1705233203182" duration="1448000" />
+      <workItem from="1705292957252" duration="1110000" />
     </task>
     <task id="LOCAL-00001" summary="Update message">
       <option name="closed" value="true" />
@@ -118,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705129405620</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Do some using Sim Interface , and add the Pictures folder.">
+      <option name="closed" value="true" />
+      <created>1705129499491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705129499491</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +172,7 @@
     <MESSAGE value="Update message" />
     <MESSAGE value="Do some Smart using Sim Interface" />
     <MESSAGE value="Do some using Sim Interface , and add the Pictures folder." />
-    <option name="LAST_COMMIT_MESSAGE" value="Do some using Sim Interface , and add the Pictures folder." />
+    <MESSAGE value="Final Update of IOC Container" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Update of IOC Container" />
   </component>
 </project>
