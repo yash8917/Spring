@@ -8,21 +8,28 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- Your bean definitions go here -->
 
-
+<!--do by using constructor injection-->
+<bean id="student" class="org.DI.Student">
+    <constructor-arg name="id" value="1" />
+    <constructor-arg name="studentName" value="Mark" />
+</bean>
 
     <!-- Define a simple bean -->
-    <bean id = "student" class="org.DI.Student">
-<!--        property == Dependencies , name == Dependency , Value == Injecting value-->
-        <property name="studentName" value="Kelvin" />
-        <property name="id" value="1" />
-    </bean>
+<!--    <bean id = "student" class="org.DI.Student">-->
+<!--&lt;!&ndash;        property == Dependencies , name == Dependency , Value == Injecting value&ndash;&gt;-->
+<!--        <property name="studentName" value="Kelvin" />-->
+<!--        <property name="id" value="1" />-->
+<!--            Ques:-> The above id value is in String but our injection is accepting int type of value so how this is to be done ??
+                Ans :-> In this situation Spring is covert the type of the value implicitly or we can specify the type attribute also (type = "int") -->
+<!--    </bean>-->
 
 <!--    <bean id = "ethane" class="org.DI.Student">-->
+<!--&lt;!&ndash;        property tag internally uses a setter method , so when we use the setter injection the in that case we  put the property tag for injecting the dependency&ndash;&gt;-->
 <!--&lt;!&ndash;        property == Dependencies , name == Dependency , Value == Injecting value&ndash;&gt;-->
 <!--        <property name="studentName" value="Ethane" />-->
 <!--        <property name="id" value="2" />-->
 <!--    </bean>-->
-        <!-- You can set properties or constructor arguments if needed -->
-        <!-- <property name="propertyName" value="propertyValue" /> -->
+<!--&lt;!&ndash;         You can set properties or constructor arguments if needed &ndash;&gt;-->
+<!--         <property name="propertyName" value="propertyValue" /> -->
 
 </beans>

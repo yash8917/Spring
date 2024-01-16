@@ -13,6 +13,13 @@ public class Student {
 //        this.studentName = studentName;
 //    }
 
+//    by using Constructor injection
+
+    public Student(int id, String studentName) {
+        this.id = id;
+        this.studentName = studentName;
+    }
+
     public void displayName(){
         System.out.println("Id of the student is: "+id+ " and Student name is : "+studentName);
     }
