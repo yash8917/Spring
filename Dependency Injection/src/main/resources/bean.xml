@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- applicationContext.xml -->
+
+<!--the below 4 lines check the validate tag or not or the 2nd task is - from where that particular tag is located-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- Your bean definitions go here -->
+
+
+
+    <!-- Define a simple bean -->
+    <bean id = "student" class="org.DI.Student">
+<!--        property == Dependencies , name == Dependency , Value == Injecting value-->
+        <property name="studentName" value="Kelvin" />
+        <property name="id" value="1" />
+    </bean>
+
+<!--    <bean id = "ethane" class="org.DI.Student">-->
+<!--&lt;!&ndash;        property == Dependencies , name == Dependency , Value == Injecting value&ndash;&gt;-->
+<!--        <property name="studentName" value="Ethane" />-->
+<!--        <property name="id" value="2" />-->
+<!--    </bean>-->
+        <!-- You can set properties or constructor arguments if needed -->
+        <!-- <property name="propertyName" value="propertyValue" /> -->
+
+</beans>
