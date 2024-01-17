@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- applicationContext.xml -->
+
+<!--the below 4 lines check the validate tag or not or the 2nd task is - from where that particular tag is located-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    Here is the example of Injecting the Object -->
+
+    <bean id="Student" class="Object.DI.Student">
+        <property name="id" value="1" />
+        <property name="mathCheat" >
+            <bean class="Object.DI.MathCheat" />
+        </property>
+    </bean>
+
+
+    <!-- Your bean definitions go here -->
+</beans>
