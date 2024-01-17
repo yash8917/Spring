@@ -13,5 +13,6 @@ public class Student {
     }
     public void ceating(){
         mathCheat.mathCheat();
+        System.out.println("Id is: "+id);
     }
 }

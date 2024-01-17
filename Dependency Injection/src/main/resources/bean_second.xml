@@ -9,13 +9,39 @@
 
 <!--    Here is the example of Injecting the Object -->
 
+<!--    <bean id="Student" class="Object.DI.Student">-->
+<!--        <property name="id" value="1" />-->
+<!--        <property name="mathCheat" >-->
+<!--            <bean class="Object.DI.MathCheat" />-->
+<!--        </property>-->
+<!--    </bean>-->
+<!--&lt;!&ndash;    but the above method is not the standard way&ndash;&gt;-->
+
+<!--&lt;!&ndash;Create Bean of another Student &ndash;&gt;-->
+<!--    <bean id="anotherStudent" class="Object.DI.AnotherStudent">-->
+<!--        <property name="cheat">-->
+<!--            <bean class="Object.DI.MathCheat" />-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    Ok look's good , but we have creating Object of MathCheat again and again for the respectively student
+        so it's not a good way , that mean we are creating the object bean again and again and the work of spring is to
+        create the light weighted project. so let's see the another way below :-
+-->
+
+    <bean id="mathCheatObjectValue" class="Object.DI.MathCheat" />
+
     <bean id="Student" class="Object.DI.Student">
         <property name="id" value="1" />
-        <property name="mathCheat" >
-            <bean class="Object.DI.MathCheat" />
-        </property>
+        <property name="mathCheat" ref="mathCheatObjectValue"  />
+    </bean>
+    <!--    but the above method is not the standard way-->
+
+    <!--Create Bean of another Student -->
+    <bean id="anotherStudent" class="Object.DI.AnotherStudent">
+        <property name="cheat" ref="mathCheatObjectValue" />
+
+
     </bean>
 
-
-    <!-- Your bean definitions go here -->
 </beans>

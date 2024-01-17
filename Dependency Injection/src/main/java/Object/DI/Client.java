@@ -10,6 +10,8 @@ public class Client {
         ApplicationContext context= new ClassPathXmlApplicationContext("bean_second.xml");
         System.out.println("Math cheat class is loaded.");
         Student stu = context.getBean("Student" , Student.class);
+        AnotherStudent anotherStudent = context.getBean("anotherStudent" , AnotherStudent.class);
         stu.ceating();
+        anotherStudent.cheating();
     }
 }
