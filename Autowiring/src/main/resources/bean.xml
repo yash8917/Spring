@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Here we update the XML documentation for activating the Annotation's -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- Your bean definitions go here -->
+<context:annotation-config />
+    <bean id="humanHeart" class="org.autowiring.Heart" >
+        <property name="nameOfAnimal" value="Human" />
+        <property name="noOfHeart" value="1" />
+     </bean>
+    <bean id="animalHeart" class="org.autowiring.Heart" >
+        <property name="nameOfAnimal" value="Dog" />
+        <property name="noOfHeart" value="1" />
+    </bean>
+<!--    So the @Autowire notation internally using what "byName" or "byType" , so the answer is first it uses the byType
+        if type is present then there is no need to go to the byName , but in the above situation there is Two type of
+        same type , then in that case it will go to the byName.
+         -->
+
+
+<!-- Autowire is internally use the setter method and inject , so we don't need the property tag-->
+<!--    but the condition is that the ID name and Reference variable name both need to be same -->
+
+<!--    <bean id="human" class="org.autowiring.Human" autowire="byName" />-->
+
+<!--    byType needs to match the type -->
+<!--    <bean id="human" class="org.autowiring.Human" autowire="byType" />-->
+
+<!--    injecting by using constructor-->
+<!--    <bean id="human" class="org.autowiring.Human" autowire="constructor" />-->
+
+<!--    Using Annotation -->
+    <bean id="human" class="org.autowiring.Human" />
+
+</beans>
