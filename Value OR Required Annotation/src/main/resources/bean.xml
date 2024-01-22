@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Here we update the XML documentation for activating the Annotation's -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--  for read the properties file we need to put the context property tag here to read from the Properties file -->
+    <context:property-placeholder location="classpath:student-info.properties"/>
+
+<!--    for activating the Annotation-->
+    <context:annotation-config />
+
+    <bean id="student" class="org.VR.Student" >
+<!--        below we read the value dynamically from the properties file-->
+<!--        <property name="name" value="${student.name}"/>-->
+<!--        <property name="intrestedCource" value="${student.intrestedCource}" />-->
+<!--         <property name="hobby" value="${student.hobby}" />-->
+<!--        for read with the help of annotation I have commented the properties tag reason -> not override the values-->
+    </bean>
+
+
+</beans>
