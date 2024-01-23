@@ -8,11 +8,11 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!--  for read the properties file we need to put the context property tag here to read from the Properties file -->
-    <context:property-placeholder location="classpath:student-info.properties"/>
-
 <!--    for activating the Annotation-->
     <context:annotation-config />
+
+<!--  for read the properties file we need to put the context property tag here to read from the Properties file -->
+    <context:property-placeholder location="classpath:student-info.properties"/>
 
     <bean id="student" class="org.VR.Student" >
 <!--        below we read the value dynamically from the properties file-->
